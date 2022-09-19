@@ -1,5 +1,6 @@
 package com.nubari.elementarysorts;
 
+// Base Elementary Sort Class
 public abstract class Sort {
     public boolean less(Comparable v, Comparable w) {
         return v.compareTo(w) < 0;

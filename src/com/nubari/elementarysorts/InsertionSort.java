@@ -1,5 +1,6 @@
 package com.nubari.elementarysorts;
 
+// Insertion Sort Implementation
 public class InsertionSort extends Sort {
     @Override
     public void sort(Comparable[] a) {
