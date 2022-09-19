@@ -10,6 +10,7 @@ class InsertionSortTest {
 
     @Test
     void sort() {
+
         var a = new Comparable[]{5, 7, 2, 11, 23, -1, 0, 1, 16};
         Sort insertionSort = new InsertionSort();
         insertionSort.sort(a);
