@@ -17,7 +17,6 @@ public class ShellSort extends Sort {
                 }
             }
             h = h / 3;
-
         }
     }
 }
