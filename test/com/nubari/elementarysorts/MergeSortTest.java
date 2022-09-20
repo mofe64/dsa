@@ -8,5 +8,8 @@ class MergeSortTest {
 
     @Test
     void sort() {
+        var a = new Comparable[]{5, 7, 2, 11, -1};
+        Sort mergeSort = new MergeSort();
+        mergeSort.sort(a);
     }
 }
