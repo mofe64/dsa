@@ -13,7 +13,7 @@ public class MergeSort extends Sort {
 
     private void sort(Comparable[] a, Comparable[] aux, int low, int high) {
         // If we have invalid indexes, we return
-        if (high < low) {
+        if (high <= low) {
             return;
         }
         // Find the middle point so that we can break our array into two smaller sub arrays
