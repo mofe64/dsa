@@ -12,5 +12,14 @@ public abstract class Sort {
         a[j] = swap;
     }
 
+    public boolean isSorted(Comparable[] a) {
+        for (int i = 1; i < a.length; i++) {
+            if (less(a[i], a[i - 1])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public abstract void sort(Comparable[] a);
 }
