@@ -1,4 +1,4 @@
-package com.nubari.elementarysorts;
+package com.nubari.sorts;
 
 // Base Elementary Sort Class
 public abstract class Sort {

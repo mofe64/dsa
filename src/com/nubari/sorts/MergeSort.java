@@ -1,4 +1,6 @@
-package com.nubari.elementarysorts;
+package com.nubari.sorts;
+
+import com.nubari.sorts.Sort;
 
 public class MergeSort extends Sort {
     @Override

@@ -1,4 +1,4 @@
-package com.nubari.elementarysorts;
+package com.nubari.sorts;
 
 public class ShellSort extends Sort {
     @Override

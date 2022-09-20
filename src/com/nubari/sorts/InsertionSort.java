@@ -1,4 +1,4 @@
-package com.nubari.elementarysorts;
+package com.nubari.sorts;
 
 // Insertion Sort Implementation
 public class InsertionSort extends Sort {
