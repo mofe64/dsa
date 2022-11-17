@@ -1,7 +1,5 @@
 package com.nubari.sorts;
 
-import com.nubari.sorts.ShellSort;
-import com.nubari.sorts.Sort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -12,18 +10,11 @@ class ShellSortTest {
 
     @Test
     void sort() {
-        var a = new Comparable[]{5, 7, 2, 11, 23, -1, 0, 1, 16};
-        Sort shellSort = new ShellSort();
-        shellSort.sort(a);
-        assertEquals(-1, a[0]);
-        assertEquals(0, a[1]);
-        assertEquals(1, a[2]);
-        assertEquals(23, a[a.length - 1]);
-        assertEquals(16, a[a.length - 2]);
-        System.out.println(Arrays.toString(a));
-        var b = new Comparable[]{'S', 'H', 'E', 'L', 'L', 'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E'};
-        shellSort.sort(b);
-        System.out.println(Arrays.toString(b));
-
+        int[] testArray = {1, 5, 1, 267, 34, 21, -9, 6, 87, -54};
+        ShellSort sort = new ShellSort();
+        sort.sort(testArray);
+        System.out.println(Arrays.toString(testArray));
+        assertEquals(-54, testArray[0]);
+        assertEquals(-9, testArray[1]);
     }
 }

@@ -1,7 +1,5 @@
 package com.nubari.sorts;
 
-import com.nubari.sorts.Sort;
-import com.nubari.sorts.MergeSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -12,11 +10,11 @@ class MergeSortTest {
 
     @Test
     void sort() {
-        var a = new Comparable[]{5, 7, 2, 11, -1};
-        Sort mergeSort = new MergeSort();
-        mergeSort.sort(a);
-        assertEquals(-1, a[0]);
-        assertEquals(11, a[a.length - 1]);
-        System.out.println(Arrays.toString(a));
+        int[] testArray = {1, 5, 1, 267, 34, 21, -9, 6, 87, -54};
+        MergeSort sort = new MergeSort();
+        sort.sort(testArray);
+        System.out.println(Arrays.toString(testArray));
+        assertEquals(-54, testArray[0]);
+        assertEquals(-9, testArray[1]);
     }
 }
