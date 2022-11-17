@@ -2,18 +2,18 @@ package com.nubari.sorts;
 
 import com.nubari.sorts.Sort;
 
-public class MergeSort extends Sort {
-    @Override
-    public void sort(Comparable[] a) {
+public class MergeSort {
+
+    public void sort(int[] a) {
         // Create a new auxiliary array that will be used to store and process the array
-        Comparable[] aux = new Comparable[a.length];
+        int[] aux = new int[a.length];
 
         // Call our internal sort method with refs to our original array,
         // our auxiliary array and our start and end indexes
         sort(a, aux, 0, a.length - 1);
     }
 
-    private void sort(Comparable[] a, Comparable[] aux, int low, int high) {
+    private void sort(int[] a, int[] aux, int low, int high) {
         // If we have invalid indexes, we return
         if (high <= low) {
             return;
@@ -28,7 +28,7 @@ public class MergeSort extends Sort {
         merge(a, aux, low, mid, high);
     }
 
-    private void merge(Comparable[] a, Comparable[] aux, int low, int mid, int high) {
+    private void merge(int[] a, int[] aux, int low, int mid, int high) {
         // We firstly copy the original array
         for (int k = low; k <= high; k++) {
             aux[k] = a[k];
@@ -39,7 +39,7 @@ public class MergeSort extends Sort {
                 a[k] = aux[j++];
             } else if (j > high) {
                 a[k] = aux[i++];
-            } else if (less(aux[j], aux[i])) {
+            } else if (aux[j] < aux[i]) {
                 a[k] = aux[j++];
             } else {
                 a[k] = aux[i++];
