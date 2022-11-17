@@ -1,17 +1,19 @@
 package com.nubari.sorts;
 
-public class SelectionSort extends Sort {
-    @Override
-    public void sort(Comparable[] a) {
+public class SelectionSort {
+
+    public void sort(int[] a) {
         int N = a.length;
         for (int i = 0; i < N; i++) {
             int minIndex = i;
             for (int j = i + 1; j < N; j++) {
-                if (less(a[j], a[minIndex])) {
+                if (a[j] < a[minIndex]) {
                     minIndex = j;
                 }
             }
-            exch(a, i, minIndex);
+            int temp = a[minIndex];
+            a[minIndex] = a[i];
+            a[i] = temp;
         }
     }
 }
