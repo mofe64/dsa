@@ -1,7 +1,5 @@
 package com.nubari.sorts;
 
-import com.nubari.sorts.Sort;
-
 public class MergeSort {
 
     public void sort(int[] a) {
