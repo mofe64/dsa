@@ -1,5 +1,6 @@
 package com.nubari.sorts;
 
+import com.nubari.sorts.java.InsertionSort;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

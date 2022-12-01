@@ -1,4 +1,4 @@
-package com.nubari.datastructures;
+package com.nubari.datastructures.java;
 
 import java.util.Iterator;
 
