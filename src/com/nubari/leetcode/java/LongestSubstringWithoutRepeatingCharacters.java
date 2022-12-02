@@ -1,4 +1,4 @@
-package com.nubari.leetcode;
+package com.nubari.leetcode.java;
 
 import java.util.ArrayList;
 
@@ -17,8 +17,8 @@ public class LongestSubstringWithoutRepeatingCharacters {
                 }
             }
             if (subString.length() > largestSubstring.length()) {
-                System.out.println("current largest sub is " + largestSubstring);
-                System.out.println("new sub is " + subString);
+//                System.out.println("current largest sub is " + largestSubstring);
+//                System.out.println("new sub is " + subString);
                 largestSubstring = subString;
             }
         }
